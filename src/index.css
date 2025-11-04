@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "SansBold";
+  src: url("../fonts/GeneralSans-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SansRegular";
+  src: url("../fonts/GeneralSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SansSemibold";
+  src: url("../fonts/GeneralSans-Semibold.woff2") format("woff2");
+}
+
+:root {
+  font-family: "SansRegular", sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 90%;
+    padding: 0 1rem;
+  }
+}
+
+#name {
+  margin-top: 40px;
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  font-family: "SansSemibold", sans-serif;
+}
+
+#description {
+  font-size: 20px;
+  color: rgb(190, 190, 190);
+}
+
+h1 {
+  font-family: "SansSemibold", sans-serif;
+}
+
+#selectedWorkDiv h1 {
+  text-align: center;
+}
+
+#contactLinks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: flex-start;
+}
+
+#contactLinks,
+#contactLinks a {
+  color: rgb(255, 255, 255);
+}
+
+b {
+  font-family: "SansBold";
+}

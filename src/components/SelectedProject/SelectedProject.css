@@ -1,0 +1,101 @@
+#selectedWorkDiv {
+  margin-top: 40px;
+}
+
+.selectedProjectDiv {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 10px;
+  transition: transform 0.1s ease;
+}
+
+.selectedProjectDiv:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.GymTracker {
+  border-image: linear-gradient(to left, #da9d2c 0%, #1a1a1a 50%) 1;
+}
+
+.Rapperdle {
+  border-image: linear-gradient(to right, #5bc069 0%, #1a1a1a 50%) 1;
+}
+
+.AuctionsApp {
+  border-image: linear-gradient(to right, #bc80d8 0%, #1a1a1a 50%) 1;
+}
+
+.Typer {
+  border-image: linear-gradient(to left, #432980 0%, #1a1a1a 50%) 1;
+}
+
+.projectTitle {
+  font-size: 30px;
+}
+
+.titleDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .titleDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+  .titleDiv img {
+    width: 30px;
+  }
+  .workInProgressDiv {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+.workInProgress {
+  color: rgb(199, 55, 55);
+  background-color: rgb(53, 13, 13);
+  padding: 3px;
+}
+
+.techDiv {
+  display: flex;
+  gap: 5px;
+}
+
+.techImg {
+  width: 40px;
+}
+
+.linksDiv {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.linksDiv a {
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.github {
+  background-color: #d1d7ff;
+}
+
+.github img {
+  width: 25px;
+}
+
+.demo {
+  background-color: #9fa8e2;
+}
