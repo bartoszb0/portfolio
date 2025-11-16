@@ -42,7 +42,7 @@ export default function SelectedProject({
   return (
     <div className={`selectedProjectDiv ${title}`}>
       <div className="titleDiv">
-        <span className="projectTitle">{title}</span>
+        <span className={`projectTitle Title${title}`}>{title}</span>
         <div className="techDiv">{technologiesUsed}</div>
       </div>
 

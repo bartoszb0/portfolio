@@ -3,32 +3,32 @@
 }
 
 .selectedProjectDiv {
-  margin-bottom: 30px;
-  padding: 20px;
-  border: 2px solid;
-  border-radius: 10px;
+  margin-bottom: 70px;
   transition: transform 0.1s ease;
 }
 
 .selectedProjectDiv:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-.GymTracker {
-  border-image: linear-gradient(to left, #da9d2c 0%, #1a1a1a 50%) 1;
+.TitleGymTracker {
+  text-decoration: underline;
+  text-decoration-color: #da9d2c;
 }
 
-.Rapperdle {
-  border-image: linear-gradient(to right, #5bc069 0%, #1a1a1a 50%) 1;
+.TitleRapperdle {
+  text-decoration: underline;
+  text-decoration-color: #5bc069;
 }
 
-.AuctionsApp {
-  border-image: linear-gradient(to right, #bc80d8 0%, #1a1a1a 50%) 1;
+.TitleAuctionsApp {
+  text-decoration: underline;
+  text-decoration-color: #bc80d8;
 }
 
-.Typer {
-  border-image: linear-gradient(to left, #432980 0%, #1a1a1a 50%) 1;
+.TitleTyper {
+  text-decoration: underline;
+  text-decoration-color: #432980;
 }
 
 .projectTitle {
