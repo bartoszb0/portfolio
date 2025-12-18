@@ -12,10 +12,10 @@ export default function SelectedWork() {
             description={
               "A full-stack, mobile-first application built with React and Django REST Framework that allows authenticated users to manage and track complex workouts. Features custom logic for seamless Workout Mode continuity and reliable progress logging."
             }
-            github={"https://github.com/bartoszb0/GymTrackerBackend"}
-            demo={"https://gymtracker-7lua.onrender.com/"}
+            github={"https://github.com/bartoszb0/GymTrackerFrontendRebuilt"}
+            demo={"https://gymtracker-m6d3.onrender.com/"}
             technologies={[
-              "Javascript",
+              "Typescript",
               "React",
               "Python",
               "Django",
