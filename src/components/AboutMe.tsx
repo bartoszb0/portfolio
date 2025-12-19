@@ -4,9 +4,10 @@ export default function AboutMe() {
       <div>
         <div id="name">Bartosz Bednarczyk</div>
         <div id="description">
-          Full-stack developer specializing in React and Django. I independently
-          build and deploy robust, high-quality web applications, turning
-          complex ideas into functional code.
+          Frontend-focused developer specializing in React and TypeScript, with
+          solid full-stack experience using Django. I independently build and
+          deploy high-quality web applications, turning complex ideas into
+          polished, user-centric interfaces and functional code.
         </div>
         <div id="contactLinks">
           <a
