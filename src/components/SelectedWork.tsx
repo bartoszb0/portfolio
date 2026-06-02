@@ -1,64 +1,34 @@
-import SelectedProject from "./SelectedProject/SelectedProject";
+import SelectedProject from "./SelectedProject";
 
 export default function SelectedWork() {
   return (
-    <>
-      <div id="selectedWorkDiv">
-        <h1>Selected work</h1>
-        <div>
-          <SelectedProject
-            title={"GymTracker"}
-            wip={false}
-            description={
-              "A full-stack, mobile-first application built with React and Django REST Framework that allows authenticated users to manage and track complex workouts. Features custom logic for seamless Workout Mode continuity and reliable progress logging."
-            }
-            github={"https://github.com/bartoszb0/GymTrackerFrontendRebuilt"}
-            demo={"https://gymtracker-m6d3.onrender.com/"}
-            technologies={[
-              "Typescript",
-              "React",
-              "Python",
-              "Django",
-              "Postgres",
-            ]}
-          />
-          <SelectedProject
-            title={"Rapperdle"}
-            wip={false}
-            description={
-              "TypeScript/React front-end Wordle-like game utilizing complex state management for guess validation and visual feedback."
-            }
-            github={"https://github.com/bartoszb0/RapperdleReact"}
-            demo={"https://rapperdle.onrender.com/"}
-            technologies={["Typescript", "React"]}
-          />
-          <SelectedProject
-            title={"Typer"}
-            wip={false}
-            description={
-              "React/JS utility tool developed from scratch. Focuses on DOM manipulation and advanced event handling to accurately track WPM and character errors in real-time."
-            }
-            github={"https://github.com/bartoszb0/typer"}
-            demo={"https://typertyper.netlify.app/"}
-            technologies={["Javascript", "React"]}
-          />
-          <SelectedProject
-            title={"AuctionsApp"}
-            wip={true}
-            description={
-              "Service for creating auctions and bidding with custom logic."
-            }
-            github={"https://github.com/bartoszb0/AuctionsAppBackend"}
-            technologies={[
-              "Typescript",
-              "React",
-              "Python",
-              "Django",
-              "Postgres",
-            ]}
-          />
-        </div>
+    <section className="pt-4 pb-14">
+      <div className="mb-10">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">
+          01
+        </p>
+        <h2 className="text-3xl text-white font-semibold">Selected work</h2>
       </div>
-    </>
+      <div className="flex flex-col gap-5">
+        <SelectedProject
+          title="AI Interview Trainer"
+          description="An AI-powered mock interview platform that pulls real job listings and generates tailored questions on the spot. Answer in a chat-style interface, get evaluated in real time, and finish with a scored debrief — overall rating, what you missed, and a question-by-question breakdown."
+          github="https://github.com/bartoszb0/ai-interview"
+          technologies={["Next.js", "Typescript", "React"]}
+        />
+        <SelectedProject
+          title="ePhotobooth (Album Chwil)"
+          description="Live photo-sharing for weddings and events. Guests scan a QR code, open a mobile gallery, and upload straight from their phone — no app install needed. Currently live and in use at real events with real guests."
+          technologies={["Vue", "Typescript"]}
+        />
+        <SelectedProject
+          title="Cleanly"
+          description="A two-sided marketplace connecting customers with cleaning professionals. Browse and book via real-time availability, track bookings, leave reviews, and chat live — while cleaners manage their schedule, earnings, and double-booking protection from a dedicated dashboard."
+          github="https://github.com/bartoszb0/cleanly"
+          demo="https://cleanly-black.vercel.app/"
+          technologies={["Next.js", "Typescript", "React", "Supabase"]}
+        />
+      </div>
+    </section>
   );
 }

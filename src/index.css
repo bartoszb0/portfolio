@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
+@import "tailwindcss";
+
 @font-face {
   font-family: "SansBold";
   src: url("../fonts/GeneralSans-Bold.woff2") format("woff2");
@@ -11,69 +14,82 @@
   src: url("../fonts/GeneralSans-Semibold.woff2") format("woff2");
 }
 
-:root {
-  font-family: "SansRegular", sans-serif;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #1a1a1a;
+@theme {
+  --font-sans: "SansRegular", sans-serif;
+  --font-semibold: "SansSemibold", sans-serif;
+  --font-bold: "SansBold", sans-serif;
+  --font-display: "Syne", sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-accent: #306c48; /* single accent — change here to recolor everything */
+  --color-bg: #0e0e10;
+  --color-surface: #161618;
+  --color-surface-hover: #1d1d20;
 }
 
-body {
-  width: 80%;
-  margin: 0 auto;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-bg);
+    color: #bebebe;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@media (min-width: 1200px) {
-  body {
-    width: 60%;
+  *:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 3px;
   }
 }
 
-@media (max-width: 600px) {
-  body {
-    width: 90%;
-    padding: 0 1rem;
+/* Hero dot-grid texture */
+.hero-texture {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.045) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+
+/* Display heading size — fluid, clamp-based */
+.text-display {
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+
+/* Entrance animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-#name {
-  margin-top: 40px;
-  font-size: 50px;
-  font-weight: 600;
-  color: white;
-  font-family: "SansSemibold", sans-serif;
+.fade-up {
+  animation: fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.fade-up-1 {
+  animation: fadeUp 0.55s 0.08s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.fade-up-2 {
+  animation: fadeUp 0.55s 0.16s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.fade-up-3 {
+  animation: fadeUp 0.55s 0.24s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-#description {
-  font-size: 20px;
-  color: rgb(190, 190, 190);
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-h1 {
-  font-family: "SansSemibold", sans-serif;
-}
-
-#selectedWorkDiv h1 {
-  text-align: center;
-}
-
-#contactLinks {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-  align-items: flex-start;
-}
-
-#contactLinks,
-#contactLinks a {
-  color: rgb(255, 255, 255);
-}
-
-b {
-  font-family: "SansBold";
+.slide-down {
+  animation: slideDown 0.22s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
