@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <AboutMe />
-      <h1>test</h1>
       <SelectedWork />
     </>
   );
