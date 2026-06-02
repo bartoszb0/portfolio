@@ -14,6 +14,7 @@ export default function SelectedWork() {
           title="AI Interview Trainer"
           description="An AI-powered mock interview platform that pulls real job listings and generates tailored questions on the spot. Answer in a chat-style interface, get evaluated in real time, and finish with a scored debrief — overall rating, what you missed, and a question-by-question breakdown."
           github="https://github.com/bartoszb0/ai-interview"
+          demo="https://ai-interview-trainer-five.vercel.app/"
           technologies={["Next.js", "Typescript", "React"]}
         />
         <SelectedProject
