@@ -1,4 +1,5 @@
 import { FaGithub, FaLink, FaLock } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 import djangoImg from "../../images/django.png";
 import javascriptImg from "../../images/javascript.png";
 import nextImg from "../../images/next.png";
@@ -15,6 +16,7 @@ type SelectedProjectProps = {
   description: string;
   github?: string;
   demo?: string;
+  website?: string;
   technologies: string[];
 };
 
@@ -24,6 +26,7 @@ export default function SelectedProject({
   description,
   github,
   demo,
+  website,
   technologies,
 }: SelectedProjectProps) {
   const images: Record<string, string> = {
@@ -128,6 +131,19 @@ export default function SelectedProject({
           >
             <FaLink size={12} />
             Live demo
+          </a>
+        )}
+
+        {website && (
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-white/[0.07] text-neutral-400 hover:border-accent/50 hover:text-accent transition-all duration-200"
+            style={{ backgroundColor: "var(--color-bg)" }}
+          >
+            <TbWorld size={12} />
+            Website
           </a>
         )}
       </div>

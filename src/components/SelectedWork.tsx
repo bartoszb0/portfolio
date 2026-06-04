@@ -20,6 +20,7 @@ export default function SelectedWork() {
         <SelectedProject
           title="ePhotobooth (Album Chwil)"
           description="Live photo-sharing for weddings and events. Guests scan a QR code, open a mobile gallery, and upload straight from their phone — no app install needed. Currently live and in use at real events with real guests."
+          website="https://albumchwil.pl/"
           technologies={["Vue", "Typescript"]}
         />
         <SelectedProject
