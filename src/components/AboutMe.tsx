@@ -18,7 +18,7 @@ export default function AboutMe() {
       />
 
       <div className="relative">
-        <p className="fade-up text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-6">
+        <p className="fade-up text-xs font-semibold uppercase text-accent mb-6">
           Frontend Developer · Warsaw
         </p>
 
