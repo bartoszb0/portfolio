@@ -2,6 +2,7 @@ import { FaGithub, FaLink, FaLock } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import djangoImg from "../../images/django.png";
 import javascriptImg from "../../images/javascript.png";
+import nestImg from "../../images/nest.png";
 import nextImg from "../../images/next.png";
 import postgresImg from "../../images/postgres.png";
 import pythonImg from "../../images/python.png";
@@ -39,6 +40,7 @@ export default function SelectedProject({
     "Next.js": nextImg,
     Supabase: supabaseImg,
     Vue: vueImg,
+    "Nest.js": nestImg,
   };
 
   return (

@@ -12,10 +12,10 @@ export default function SelectedWork() {
       <div className="flex flex-col gap-5">
         <SelectedProject
           title="AI Interview Trainer"
-          description="An AI-powered mock interview platform that pulls real job listings and generates tailored questions on the spot. Answer in a chat-style interface, get evaluated in real time, and finish with a scored debrief — overall rating, what you missed, and a question-by-question breakdown."
+          description="An AI-powered mock interview platform that pulls real job listings and generates tailored questions on the spot. Answer in a chat-style interface, get evaluated in real time, and finish with a scored debrief — overall rating, what you missed, and a question-by-question breakdown. Authorization and saving interview sessions for users done with NestJS."
           github="https://github.com/bartoszb0/ai-interview"
           demo="https://ai-interview-trainer-five.vercel.app/"
-          technologies={["Next.js", "Typescript", "React"]}
+          technologies={["Next.js", "Nest.js", "Typescript", "React"]}
         />
         <SelectedProject
           title="ePhotobooth (Album Chwil)"
