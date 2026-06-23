@@ -40,7 +40,7 @@ export default function SelectedProject({
     "Next.js": nextImg,
     Supabase: supabaseImg,
     Vue: vueImg,
-    "Nest.js": nestImg,
+    NestJS: nestImg,
   };
 
   return (

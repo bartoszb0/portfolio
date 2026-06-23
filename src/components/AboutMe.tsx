@@ -30,10 +30,10 @@ export default function AboutMe() {
           className="fade-up-2 text-base leading-[1.75] mb-8 max-w-[520px]"
           style={{ color: "#bebebe" }}
         >
-          I'm Bartosz, a frontend-leaning web developer based in Warsaw, working
-          primarily with TypeScript, React, Next.js, and Vue. Over the past two
-          years I've taught myself to build and ship real applications —
-          including a live commercial product used at real events with paying
+          I'm Bartosz, a full-stack web developer based in Warsaw, working
+          primarily with TypeScript, React, NestJS, Next.js, and Vue. Over the
+          past two years I've taught myself to build and ship real applications
+          — including a live commercial product used at real events with paying
           users. I'm looking for my first professional developer role where I
           can keep growing within a team.
         </p>
