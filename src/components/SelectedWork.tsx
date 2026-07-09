@@ -24,6 +24,14 @@ export default function SelectedWork() {
           technologies={["Vue", "Typescript"]}
         />
         <SelectedProject
+          title="Quelly"
+          description="Full-stack queue tracker for food vendors with shift-based order flow, real-time guest tracking over Socket.IO, QR flyer generator, and an analytics dashboard."
+          github="https://github.com/bartoszb0/quelly"
+          demo="https://quelly.vercel.app/"
+          technologies={["Typescript", "React", "NestJS"]}
+        />
+
+        <SelectedProject
           title="Cleanly"
           description="A two-sided marketplace connecting customers with cleaning professionals. Browse and book via real-time availability, track bookings, leave reviews, and chat live — while cleaners manage their schedule, earnings, and double-booking protection from a dedicated dashboard."
           github="https://github.com/bartoszb0/cleanly"
