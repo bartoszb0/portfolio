@@ -19,7 +19,7 @@ export default function AboutMe() {
 
       <div className="relative">
         <p className="fade-up text-xs font-semibold uppercase text-accent mb-6">
-          Frontend Developer · Warsaw
+          Web Developer · Warsaw
         </p>
 
         <h1 className="fade-up-1 text-display font-semibold text-white mb-7">
